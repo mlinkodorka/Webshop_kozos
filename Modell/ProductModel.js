@@ -1,7 +1,7 @@
 export default class ProductModel {
   constructor() {
     this.products = [
-      { id: 1, name: "CFortec", ár: 20000, image: "Kepek/kuka1.png" },
+      { id: 1, name: "Fortec", ár: 20000, image: "Kepek/kuka1.png" },
       { id: 2, name: "Quantec", ár: 40000, image: "Kepek/kuka2.png" },
       { id: 3, name: "Delta", ár: 10000, image: "Kepek/kuka3.png" },
       { id: 4, name: "Cybertech", ár: 35000, image: "Kepek/kuka4.png" }
