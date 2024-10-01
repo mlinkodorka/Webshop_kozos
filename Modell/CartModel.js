@@ -4,18 +4,18 @@ export default class CartModel {
   }
 
   // Termék hozzáadása a kosárhoz
-  addToCart(product) {
+  hozzadkosarhoz(product) {
     this.cart.push(product);
   }
 
   // Kosár tartalmának lekérdezése
-  getCartItems() {
+  kosarellenoriz() {
     return this.cart;
   }
 
   // Kosár összértékének kiszámítása
-  getTotalPrice() {
-    return this.cart.reduce((total, product) => total + product.price, 0);
+  osszertek() {
+    return this.cart.reduce((total, product) => total + product.ár, 0);
   }
 
   // Kosár ürítése

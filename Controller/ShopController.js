@@ -14,20 +14,21 @@ export default class ShopController {
     this.cartView = new CartView($("#cart"));
 
     // Események kezelése
-    this.productListView.bindAddToCart(this.handleAddToCart.bind(this));
+    this.productListView.Kattintas(this.termekhozzadasa.bind(this));
   }
 
   // Termék hozzáadása a kosárhoz
-  handleAddToCart(productId) {
-    const product = this.productModel.getProductById(productId);
-    this.cartModel.addToCart(product);
-    this.updateCartView();
+  termekhozzadasa(Id) {
+    const product = this.productModel.getProductById(Id);
+    this.cartModel.hozzadkosarhoz(product);
+    this.kosarfrissit();
   }
 
   // Kosár nézet frissítése
-  updateCartView() {
-    const cartItems = this.cartModel.getCartItems();
-    const totalPrice = this.cartModel.getTotalPrice();
-    this.cartView.render(cartItems, totalPrice);
+  kosarfrissit() {
+    const cartItems = this.cartModel.kosarellenoriz();
+    const totalPrice = this.cartModel.osszertek();
+    this.cartView.Termekmegjelenit(cartItems, totalPrice);
+    
   }
 }
