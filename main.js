@@ -1,3 +1,8 @@
-import ShopController from "./Controller/ShopController.js";
+import AdminController from './Controller/AdminController.js';
+import ShopController from './Controller/ShopController.js';
 
-new ShopController()
+// Publikus felület
+new ShopController();
+
+// Admin felület
+new AdminController();

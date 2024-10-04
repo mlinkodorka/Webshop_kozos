@@ -110,3 +110,32 @@ body {
     }
   
   }  
+
+/* Admin "felület" táblázat stílusok */
+#admin-tablazat {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  text-align: left;
+}
+
+#admin-tablazat th, #admin-tablazat td {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+#admin-tablazat th {
+  background-color: #f4f4f4;
+}
+
+#admin-tablazat .torles-gomb {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#admin-tablazat .torles-gomb:hover {
+  background-color: #c82333;
+}
